@@ -22,10 +22,10 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore QuizAPI/QuizAPI.sln
+      run: dotnet restore QuizAPI.sln
 
     - name: Build
-      run: dotnet build QuizAPI/QuizAPI.sln --no-restore
+      run: dotnet build QuizAPI.sln --no-restore
 
     - name: Run tests
-      run: dotnet test QuizAPI/QuizAPI.sln --no-build --verbosity normal
+      run: dotnet test QuizAPI.sln --no-build --verbosity normal
